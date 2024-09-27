@@ -1,3 +1,16 @@
+body {
+    background-color: rgb(73, 73, 73);
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+p {
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -13,11 +26,23 @@ header img {
     border-radius: 20%;
 }
 
+#sandwich img{
+    display: none;
+    width: 30px;
+    height: auto;
+    border-radius: 40px;
+    background-color: blue;
+}
+
 nav {
     display: flex;
     align-items: center;
     min-width: 30px;
     max-width: 100%;
+}
+
+nav img{
+    display: none;
 }
 
 nav ul {
@@ -28,7 +53,8 @@ nav ul {
     width: 100%;
     height: 40px;
     border-radius: 20px;
-    background-color: lightblue;
+    background-color: rgb(34, 33, 33);
+    border: 3px solid rgb(67, 67, 255);
 }
 
 nav ul li {
@@ -47,7 +73,6 @@ nav ul li a {
     justify-content: center;
     border-radius: 20px;
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     width: 50%;
     background-color: blanchedalmond;
 }
@@ -69,7 +94,7 @@ nav ul li a:hover {
 }
 
 #about p {
-    max-width: 400px;
+    max-width: 500px;
 }
 
 #experiencia {
@@ -81,11 +106,17 @@ nav ul li a:hover {
 }
 
 #formacoes {
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
+    
+}
+
+#formacoes h4 {
+    max-width: 500px;
 }
 
 #projetos {
@@ -102,6 +133,7 @@ nav ul li a:hover {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    max-width: 500px;
 }
 
 
@@ -131,7 +163,6 @@ footer ul li a {
     justify-content: center; 
     
     
-    
 }
 
 
@@ -145,4 +176,15 @@ section {
     }
 
 
+}
+
+
+@media screen and (max-width: 700px) {
+    nav{
+        display: none;
+    }
+
+    #sandwich img {
+        display: block;
+    }
 }
